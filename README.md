@@ -79,7 +79,10 @@ Develop a Library Management System using Express, TypeScript, and MongoDB with 
 ✨ Main API Endpoints
 
 1. Create Book
-   POST /api/books
+
+```json
+POST /api/books
+```
 
 Request:
 
@@ -117,10 +120,18 @@ Response:
 ```
 
 2. Get All Books
-   GET /api/books
-   Supports filtering and sorting:
 
-Example Query: /api/books?filter=FANTASY&sortBy=createdAt&sort=desc&limit=5
+```json
+GET /api/books
+```
+
+Supports filtering and sorting:
+
+Example Query:
+
+```json
+ /api/books?filter=FANTASY&sortBy=createdAt&sort=desc&limit=5
+```
 
 Response:
 
@@ -146,7 +157,10 @@ Response:
 ```
 
 3. Get Book by ID
-   GET /api/books/:bookId
+
+```json
+GET /api/books/:bookId
+```
 
 Response:
 
@@ -170,7 +184,10 @@ Response:
 ```
 
 4. Update Book
-   PUT /api/books/:bookId
+
+```json
+PUT /api/books/:bookId
+```
 
 Request:
 
@@ -188,7 +205,10 @@ Response:
 ```
 
 5. Delete Book
-   DELETE /api/books/:bookId
+
+```json
+DELETE /api/books/:bookId
+```
 
 Response:
 
