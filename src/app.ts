@@ -1,9 +1,24 @@
 import express, { Application, Request, Response } from "express";
-
+import cors from "cors";
 import { bookRoutes } from "./app/controllers/book.controller";
 import { borrowRoutes } from "./app/controllers/borrow.controller";
 
 const app: Application = express();
+
+// Middleware
+
+app.use(cors());
+// app.options('*', cors());
+
+app.use(express.json());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://library-management-ochre-ten.vercel.app",
+    ],
+  })
+);
 
 // Routes
 app.use("/api/books", bookRoutes);
