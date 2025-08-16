@@ -351,7 +351,3 @@ npm run dev
 Live Deployment Link : https://library-management-ochre-ten.vercel.app/
 
 📽️ Video Explanation Link : https://app.usebubbles.com/f5GH3pZGNm2E2f6B8ww4m8
-
-```
-
-```
