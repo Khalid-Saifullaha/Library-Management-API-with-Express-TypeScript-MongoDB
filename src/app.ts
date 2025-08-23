@@ -13,7 +13,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://library-management-ochre-ten.vercel.app",
+      "https://library-management-system-frontend-sigma.vercel.app",
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
