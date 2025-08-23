@@ -7,16 +7,16 @@ const app: Application = express();
 
 // Middleware
 
-app.use(cors());
-// app.options('*', cors());
-
 app.use(express.json());
+
 app.use(
   cors({
     origin: [
       "http://localhost:5173",
       "https://library-management-ochre-ten.vercel.app",
     ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    credentials: true,
   })
 );
 
